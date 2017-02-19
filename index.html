@@ -3,19 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Teddy Ni</title>
-  
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<script src="app/app.js"></script>
-  
-
-  
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body >
-  <div ng-app="myApp">
-    <div ng-controller="controller">
-        <div ng-repeat="section in sections">{{section.title}}</div>
-    </div>
+  <h2> Teddy Ni </h2>
+
+<div class="tab">
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ContactMe')">Contact Me</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'RandomMe')">Random Me</a>
 </div>
+
+<div id="AboutMe" class="tabcontent">
+  <h3>About Me</h3>
+  <p>Hi! My name is Teddy Ni, and I'm currenty a '19 at Dartmouth College in Hanover, New Hampshire!'</p>
+</div>
+
+<div id="ContactMe" class="tabcontent">
+  <h3>Contact Me</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="RandomMe" class="tabcontent">
+  <h3>Random Me</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openTab(evt, tab) {
+    var i;
+    var content;
+    var links;
+    content = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
+    }
+    links = document.getElementsByClassName("tablinks");
+    for (i = 0; i < links.length; i++) {
+        links[i].className = links[i].className.replace(" active", "");
+    }
+    document.getElementById(tab).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
 </body>
 </html>
