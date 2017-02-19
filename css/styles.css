@@ -1,13 +1,52 @@
 body {
-  font-family: "Lato", sans-serif;
   background: linear-gradient(to right, #FFB6C1 , #ADD8E6);
 }
+a{
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 24px;
+}
+/* Set up fonts for the whole page*/
+h1 {
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+}
+p {
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+/*Style name header at top*/
+#name{
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 48px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
 
 /* Style the tab */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #B0C4DE;
 }
 
 /* Style the links inside the tab */
@@ -24,12 +63,12 @@ div.tab a {
 
 /* Change background color of links on hover */
 div.tab a:hover {
-    background-color: #ddd;
+    background-color: #20B2AA;
 }
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
-    background-color: #ccc;
+    background-color: #008080;
 }
 
 /* Style the tab content */
@@ -40,7 +79,11 @@ div.tab a:focus, .active {
     border-top: none;
 }
 
-/*Contact Me Icons*/
-i:hover{
-
+.line {
+	height: 8px;
+  width: 100%;
+  background-color: #828282;
+	border-radius: 0px;
+  margin-top: 47px;
+	text-align: center;
 }
