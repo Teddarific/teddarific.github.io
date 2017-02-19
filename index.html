@@ -12,12 +12,13 @@
 </head>
 <body >
   <h2 id="name"> Teddy Ni </h2>
-<div class="tab">
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'ContactMe')">Find Me</a>
-</div>
-
-<div id="AboutMe" class="container tabcontent">
+<!--
+  <ul class="nav nav-tabs">
+     <li class="active"><a data-toggle="tab" href="#AboutMe">About Me </a></li>
+     <li><a data-toggle="tab" href="#FindMe">Find Me</a></li>
+   </ul>
+-->
+<div id="AboutMe">
 
   <!-- PICTURES -->
   <div class ="row">
@@ -105,7 +106,7 @@
   </p>
 </div>
 
-<div id="ContactMe" class="tabcontent">
+<div id="FindMe">
   <a class = "media" href="https://www.facebook.com/teddy.ni" target="_blank">
     <i class="fa fa-facebook-square" style="font-size:60px;"></i>
   </a>
@@ -120,23 +121,7 @@
   </a>
 </div>
 
-<script>
-function openTab(evt, tab) {
-    var i;
-    var content;
-    var links;
-    content = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < content.length; i++) {
-        content[i].style.display = "none";
-    }
-    links = document.getElementsByClassName("tablinks");
-    for (i = 0; i < links.length; i++) {
-        links[i].className = links[i].className.replace(" active", "");
-    }
-    document.getElementById(tab).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+
 
 </body>
 </html>
