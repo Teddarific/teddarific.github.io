@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Teddy Ni</title>
+  <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- BOOTSTRAP -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- AWESOME FONT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- MY STUFF -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/facts.js"></script>
+
 </head>
 <body >
-  <h2 id="name"> Teddy Ni </h2>
+  <div class = "row">
+    <div class = "col-sm-8">
+      <h2 id="name"> Teddy Ni </h2>
+      <h1 id="fact"></h1>
+    </div>
+  </div>
 <!--
   <ul class="nav nav-tabs">
      <li class="active"><a data-toggle="tab" href="#AboutMe">About Me </a></li>
      <li><a data-toggle="tab" href="#FindMe">Find Me</a></li>
    </ul>
 -->
-<div id="AboutMe">
+<div id="AboutMe" class = "container">
 
   <!-- PICTURES -->
   <div class ="row">
@@ -83,7 +97,7 @@
       I began learning Node.js and Express. Beyond Angular and Node, I have experience in HTML/JS/CSS, Socket.io, MongoDB/Mongoose,
       Jade, and Java. My favorite language is without a doubt JavaScript! I've also written unit tests in the Karma + Jasmine framework
       for a front-end web application at Dasault Systemes.
-      Check out my Github profile in the Contact Me tab to see some of my work!
+      Check out my Github profile at the bottom of the page!
   </p>
 
   <!-- ASPIRATIONS -->
@@ -106,19 +120,25 @@
   </p>
 </div>
 
-<div id="FindMe">
-  <a class = "media" href="https://www.facebook.com/teddy.ni" target="_blank">
-    <i class="fa fa-facebook-square" style="font-size:60px;"></i>
-  </a>
-  <a class = "media" href="https://www.linkedin.com/in/teddy-ni-258771118/" target="_blank">
-    <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
-  </a>
-  <a class = "media" href="https://github.com/Teddarific" target="_blank">
-    <i class="fa fa-github-square" style="font-size:60px;"></i>
-  </a>
-  <a class = "media" href="https://www.instagram.com/teddarific/" target="_blank">
-    <i class="fa fa-instagram" style="font-size:60px;"></i>
-  </a>
+<div id="FindMe" class = "container">
+  <div class = "row">
+    <div class = "col-sm-9">
+    </div>
+    <div class = "col-sm-3">
+      <a class = "media" href="https://www.facebook.com/teddy.ni" target="_blank">
+        <i class="fa fa-facebook-square" style="font-size:60px;"></i>
+      </a>
+      <a class = "media" href="https://www.linkedin.com/in/teddy-ni-258771118/" target="_blank">
+        <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
+      </a>
+      <a class = "media" href="https://github.com/Teddarific" target="_blank">
+        <i class="fa fa-github-square" style="font-size:60px;"></i>
+      </a>
+      <a class = "media" href="https://www.instagram.com/teddarific/" target="_blank">
+        <i class="fa fa-instagram" style="font-size:60px;"></i>
+      </a>
+    </div>
+  </div>
 </div>
 
 
