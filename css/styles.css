@@ -39,9 +39,16 @@ p {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+
 }
 
+#headerDiv{
+  margin-top: 20px;
+}
 
+.img-rounded{
+  margin-top: 20px;
+}
 /* Style the tab */
 /*
 .nav-tabs {
@@ -78,5 +85,13 @@ p {
 	height: 8px;
   border-radius: 0px;
   background-color: #828282;
-  margin-top: 47px;
+  margin-top: 35px;
+  text-align: center;
+}
+.emptyline {
+  width: 100%;
+	height: 8px;
+  border-radius: 0px;
+  background-color: #828282;
+  margin-top: 10px;
 }
