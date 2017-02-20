@@ -79,7 +79,21 @@ $(document).ready(function(){
                     " is probably taking a nap right now",
                     " likes telling dumb jokes",
                     " dies for sushi",
-                    " cannot wait for Friday",
-                    " needs to work more on the website"
+                    " needs to work more on the website",
+                    " has the best girlfriend ever",
+                    " reads Stack Overflow",
+                    " is spelled 'Teddy Ni'",
+                    " 's full name is Teddy",
+                    " goes to Dartmouth College",
+                    " can sometimes find Waldo",
+                    " has a Taylor Swift tank top",
+                    " can't stop listening to 1989",
+                    " hopes you are enjoying this website",
+                    " encourages you to visit again when things are cooler",
+                    " reminds you that one million starts with one",
+                    " likes elephants",
+                    " can speak some Chinese and Spanish",
+                    " has some sweet Spotify playlists",
+                    " once had the dream to be a competitive eater"
                   ]);
 });
