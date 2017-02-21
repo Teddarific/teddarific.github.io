@@ -80,7 +80,6 @@ $(document).ready(function(){
                     " likes telling dumb jokes",
                     " dies for sushi",
                     " needs to work more on the website",
-                    " has the best girlfriend ever",
                     " reads Stack Overflow",
                     " is spelled 'Teddy Ni'",
                     " 's full name is Teddy",

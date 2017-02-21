@@ -28,7 +28,7 @@ p {
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 30px;
 }
 
 /*Style name header at top*/
@@ -39,7 +39,6 @@ p {
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
-
 }
 
 #headerDiv{
