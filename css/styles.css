@@ -1,6 +1,8 @@
 body {
   background: linear-gradient(to right, #FFB6C1 , #ADD8E6);
+  padding-top: 65px;
 }
+
 a{
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	font-size: 24px;
@@ -78,6 +80,22 @@ p {
     border-top: none;
 }
 */
+
+#general {
+  padding-top: 50px;
+}
+#academics {
+  padding-top: 50px;
+}
+#interests {
+  padding-top: 50px;
+}
+#experience{
+  padding-top: 50px;
+}
+#aspiration{
+  padding-top: 50px;
+}
 
 .line {
   width: 100%;
