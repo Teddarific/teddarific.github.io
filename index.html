@@ -16,10 +16,12 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Lato|Open+Sans|Roboto+Mono|Roboto" rel="stylesheet">
+
 
   <!-- JS -->
   <script src="js/scrollspy.js"></script>
-  <!-- <script src="js/facts.js"></script> -->
+  <script src="js/facts.js"></script>
 </head>
 <body >
 
@@ -27,7 +29,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -47,16 +49,18 @@
 </nav>
 
 <!-- LANDING SECTION -->
-<div class="jumbotron text-center vertical-center home">
-  <div id=name class="container"> Teddy Ni </div>
-  <p id="fact"> </p>
+<div class="jumbotron vertical-center home">
+  <div class="container">
+    <div id=name class="text-center row"> TEDDY NI </div>
+    <div id="fact" class="text-center row"> </div>
+  </div>
 </div>
 
 <!-- ABOUT -->
 <div id="about" class="container-fluid section">
   <div class="row">
-    <h2> About </h2>
-    <h4>
+    <div class="text-center header"> About </div>
+    <div>
       My name is Teddy Ni, and I'm currently a student at Dartmouth College.
       I was born and raised in Barrington, Rhode Island and have lived there my
       whole life.
@@ -65,7 +69,7 @@
       Outside of class, I'm a developer for the DALI Lab,
       a member of the Student Organization Accountability Board, and a
       midfielder for Dartmouth's Club Soccer team.
-    </h4>
+    </div>
   </div>
 </div>
 
@@ -73,20 +77,20 @@
 <!-- PORTFOLIO -->
 <div id="portfolio" class="container-fluid section">
   <div class="row">
-    <h2> Portfolio </h2>
-    <h4>
+    <div class="text-center header"> Portfolio </div>
+    <div>
       Here is my portfolio in computer science!
-    </h4>
+    </div>
   </div>
 </div>
 
 <!-- Contact Me -->
 <div id="contact" class="container-fluid section">
   <div class="row">
-    <h2> Contact Me </h2>
-    <h4>
+    <div class="text-center header"> Contact Me </div>
+    <div>
       Here is my contact me section!
-    </h4>
+    </div>
   </div>
 </div>
 

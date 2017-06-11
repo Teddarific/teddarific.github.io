@@ -6,6 +6,15 @@ Sunset: #985E6D
 Evening: #192231
 */
 
+@font-face {
+  font-family: OstrichSansInline;
+  src: url(fonts/OstrichSansInline-Regular.otf);
+}
+@font-face {
+  font-family: OstrichSansLight;
+  src: url(fonts/OstrichSans-Light.otf);
+}
+
 html, body {
   color: white;
 }
@@ -15,7 +24,7 @@ html, body {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-family: "Ostrich Sans Inline", ostrich-sans-inline;
+    font-family: OstrichSansInline;
     font-size: 35px;
 }
 
@@ -45,15 +54,20 @@ ul.nav a:active {
 }
 
 .vertical-center {
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
 }
 
 #name {
-  font-family: "Ostrich Sans Dashed",ostrich-sans-dashed;
-  font-size: 100px;
+  font-family: OstrichSansLight;
+  font-size: 120px;
+}
+
+#fact {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
 }
 
 .section {
@@ -61,6 +75,11 @@ ul.nav a:active {
   min-height: 300px;
   height: 100vh;
   color: white;
+}
+
+.header {
+  font-family: "Ostrich Sans";
+  font-size: 50px;
 }
 
 #about {

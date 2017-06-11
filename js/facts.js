@@ -7,7 +7,7 @@ $.fn.typer = function(text, options){
     //Options
     options = $.extend({}, {
         char: ' ',
-        delay: 1000, //Delay between switching facts
+        delay: 2000, //Delay between switching facts
         duration: 600, //how long each fact lasts
         endless: true
     }, options || text);
@@ -34,17 +34,6 @@ $.fn.typer = function(text, options){
             }
         } else {
             c = 0;
-
-            //Original: iterate through each fact
-            /**
-            i++;
-            if (i === text.length && !options.endless) {
-                return;
-            } else if (i === text.length) {
-                i = 0;
-            }
-            */
-
             //Find random fact instead:
             var k;
             do{
@@ -60,18 +49,15 @@ $.fn.typer = function(text, options){
 
 
 $(document).ready(function(){
-  $('#fact').typer([" enjoys doing web development",
-                    " is from Rhode Island",
-                    " can solve a rubik's cube",
-                    " is a member of Sigma Phi Epsilon",
-                    " loves traveling around the world",
-                    " is an Arsenal supporter",
-                    " wants to join a start-up",
-                    " is probably taking a nap right now",
-                    " likes telling dumb jokes",
-                    " absolutely dies for sushi",
-                    " is a student at Dartmouth College",
-                    " has some sweet Spotify playlists",
-                    " is an aspiring entrepreneur and developer"
+  $('#fact').typer(["enjoys doing web development",
+                    "is from Rhode Island",
+                    "can solve a rubik's cube",
+                    "is a member of Sigma Phi Epsilon",
+                    "is an Arsenal supporter",
+                    "one day wants to start his own company",
+                    "is a student at Dartmouth College",
+                    "is an aspiring entrepreneur and developer",
+                    "plays soccer",
+                    "can eat a lot of ice cream",
                   ]);
 });
