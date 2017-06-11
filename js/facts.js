@@ -8,7 +8,7 @@ $.fn.typer = function(text, options){
     options = $.extend({}, {
         char: ' ',
         delay: 2000, //Delay between switching facts
-        duration: 600, //how long each fact lasts
+        duration: 1000, //how long each fact lasts
         endless: true
     }, options || text);
 
@@ -49,15 +49,15 @@ $.fn.typer = function(text, options){
 
 
 $(document).ready(function(){
-  $('#fact').typer(["enjoys doing web development",
+  $('#fact').typer([
                     "is from Rhode Island",
                     "can solve a rubik's cube",
                     "is a member of Sigma Phi Epsilon",
-                    "is an Arsenal supporter",
-                    "one day wants to start his own company",
-                    "is a student at Dartmouth College",
-                    "is an aspiring entrepreneur and developer",
-                    "plays soccer",
-                    "can eat a lot of ice cream",
+                    "Developer",
+                    "Designer",
+                    "Thinker",
+                    "Entrepreneur",
+                    "Student",
+                    "Learner",
                   ]);
 });

@@ -70,16 +70,29 @@ ul.nav a:active {
   font-size: 20px;
 }
 
+#propic {
+  height: 50vh;
+  width: 50vh;
+}
+
 .section {
-  padding-top: 50px;
-  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  min-height: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
   height: 100vh;
   color: white;
 }
 
 .header {
-  font-family: "Ostrich Sans";
-  font-size: 50px;
+  font-family:OstrichSansLight;
+  font-size: 75px;
+}
+
+.infop {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
 }
 
 #about {
