@@ -60,39 +60,18 @@ $.fn.typer = function(text, options){
 
 
 $(document).ready(function(){
-  $('#fact').typer([" plays soccer",
-                    " enjoys doing web development",
+  $('#fact').typer([" enjoys doing web development",
                     " is from Rhode Island",
                     " can solve a rubik's cube",
-                    " loves longboarding",
                     " is a member of Sigma Phi Epsilon",
                     " loves traveling around the world",
-                    " has very, very, very small hands",
                     " is an Arsenal supporter",
-                    " actually likes algorithms",
-                    " is beginning to fall for coffee",
-                    " has way too many shoes",
-                    " enjoys himself a nice pen",
-                    " prefers the fall and spring",
-                    " is Chinese American",
                     " wants to join a start-up",
                     " is probably taking a nap right now",
                     " likes telling dumb jokes",
-                    " dies for sushi",
-                    " needs to work more on the website",
-                    " reads Stack Overflow",
-                    " is spelled 'Teddy Ni'",
-                    " 's full name is Teddy",
-                    " goes to Dartmouth College",
-                    " can sometimes find Waldo",
-                    " has a Taylor Swift tank top",
-                    " can't stop listening to 1989",
-                    " hopes you are enjoying this website",
-                    " encourages you to visit again when things are cooler",
-                    " reminds you that one million starts with one",
-                    " likes elephants",
-                    " can speak some Chinese and Spanish",
+                    " absolutely dies for sushi",
+                    " is a student at Dartmouth College",
                     " has some sweet Spotify playlists",
-                    " once had the dream to be a competitive eater"
+                    " is an aspiring entrepreneur and developer"
                   ]);
 });

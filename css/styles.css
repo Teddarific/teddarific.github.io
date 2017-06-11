@@ -1,114 +1,76 @@
-body {
-  background: linear-gradient(to right, #FFB6C1 , #ADD8E6);
-  padding-top: 65px;
-}
-
-a{
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 24px;
-}
-/* Set up fonts for the whole page*/
-h1 {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-}
-h3 {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15.4px;
-}
-p {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 30px;
-}
-
-/*Style name header at top*/
-#name{
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-	font-size: 48px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-}
-
-#headerDiv{
-  margin-top: 20px;
-}
-
-.img-rounded{
-  margin-top: 20px;
-}
-/* Style the tab */
 /*
-.nav-tabs {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #B0C4DE;
-}
-
-/* Style the links inside the tab */
-/*
-.nav-tabs a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-
-/* Style the tab content */
-/*
-.tab-pane {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
+Style Guide:
+Stormy: #494E6B
+Cloud: #98878F
+Sunset: #985E6D
+Evening: #192231
 */
 
-#general {
-  padding-top: 50px;
-}
-#academics {
-  padding-top: 50px;
-}
-#interests {
-  padding-top: 50px;
-}
-#experience{
-  padding-top: 50px;
-}
-#aspiration{
-  padding-top: 50px;
+html, body {
+  color: white;
 }
 
-.line {
-  width: 100%;
-	height: 8px;
-  border-radius: 0px;
-  background-color: #828282;
-  margin-top: 35px;
-  text-align: center;
+.navbar.navbar-default {
+    background-color: #192231;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-family: "Ostrich Sans Inline", ostrich-sans-inline;
+    font-size: 35px;
 }
-.emptyline {
-  width: 100%;
-	height: 8px;
-  border-radius: 0px;
-  background-color: #828282;
-  margin-top: 10px;
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ul.nav a:hover {
+  color: #985E6D !important;
+}
+
+ul.nav a:active {
+  color: #494E6B !important;
+}
+
+.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+.home {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #192231;
+  margin-bottom: 0;
+}
+
+.vertical-center {
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+#name {
+  font-family: "Ostrich Sans Dashed",ostrich-sans-dashed;
+  font-size: 100px;
+}
+
+.section {
+  padding-top: 50px;
+  min-height: 300px;
+  height: 100vh;
+  color: white;
+}
+
+#about {
+  background-color: #494E6B;
+}
+
+#portfolio {
+  background-color: #98878F;
+}
+
+#contact {
+  background-color: #494E6B;
 }
