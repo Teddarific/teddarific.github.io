@@ -70,29 +70,32 @@ ul.nav a:active {
   font-size: 20px;
 }
 
+
 #propic {
-  height: 50vh;
-  width: 50vh;
+  height: 350px;
+  width: 350px;
 }
 
 .section {
   padding-top: 40px;
   padding-bottom: 20px;
-  min-height: 400px;
+  overflow: auto;
   padding-left: 50px;
   padding-right: 50px;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   color: white;
 }
 
 .header {
   font-family:OstrichSansLight;
-  font-size: 75px;
+  font-size: 85px;
+  margin-bottom: 20px;
 }
 
 .infop {
   font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #about {
