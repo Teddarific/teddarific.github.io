@@ -72,8 +72,10 @@ ul.nav a:active {
 
 
 #propic {
-  height: 350px;
-  width: 350px;
+  height: 50vh;
+  width: 45vh;
+  display: block;
+  margin: auto;
 }
 
 .section {
