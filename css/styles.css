@@ -91,13 +91,13 @@ ul.nav a:active {
 
 .header {
   font-family:OstrichSansLight;
-  font-size: 85px;
+  font-size: 14vh;
   margin-bottom: 20px;
 }
 
 .infop {
   font-family: 'Roboto Mono', monospace;
-  font-size: 25px;
+  font-size: 3.5vh;
 }
 
 #about {
