@@ -11,6 +11,8 @@ function transition(){
 function loaded(){
   document.getElementById("logo").style.display = "none";
   document.getElementById("logo-wrapper").style.display = "none";
+  $(".home").css("display","flex");
+  $(".section").css("display","block");
   document.getElementById("home").style.display = "block";
   document.getElementById("allnavbar").style.display = "block";
 }
