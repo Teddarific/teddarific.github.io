@@ -26,10 +26,9 @@ function startTyping(){
                      "a developer.",
                      "a student.",
                      "a thinker.",
-                     "an entrepreneur.",
                      "a learner.",
                      "a designer.",
-                     "a believer."
+                     "a tech lover.",
                     ],
               typeSpeed: 50
         });
