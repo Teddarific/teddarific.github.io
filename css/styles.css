@@ -19,6 +19,18 @@ html, body {
   color: white;
 }
 
+.letter {
+  margin: 0 10px;
+}
+
+#logo-wrapper{
+  background-color: #192231;
+}
+
+#logo {
+ display: none;
+}
+
 .navbar.navbar-default {
     background-color: #192231;
     border: 0;
@@ -51,6 +63,14 @@ ul.nav a:active {
   min-height: 100vh;
   background-color: #192231;
   margin-bottom: 0;
+}
+
+#allnavbar {
+  background-color: #192231;
+  display: none;
+}
+#home {
+  display: none;
 }
 
 .vertical-center {
@@ -105,14 +125,16 @@ ul.nav a:active {
   background-color: #494E6B;
 }
 
-/*
+
 #portfolio {
   background-color: #98878F;
 }
-*/
+
+/*
 #contact {
   background-color: #98878F;
 }
+*/
 
 .typed-cursor{
 	opacity: 1;

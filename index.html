@@ -18,19 +18,23 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
+  <!-- LIBRARIES -->
+  <script src="js/libs/d3-ease.v0.6.js"></script>
+  <script src="js/libs/letters.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script> -->
+  <script src="js/libs/segment.min.js"></script>
+  <script src="js/libs/typed.js"></script>
 
   <!-- JS -->
   <script src="js/scrollspy.js"></script>
   <script src="js/facts.js"></script>
-
-  <script src="js/typed.js"></script>
-
+  <script src="js/loader.js"></script>
 </head>
-<body >
+<body onload="loader()">
 
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" id="allnavbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
@@ -38,7 +42,7 @@
         <!-- <span class="icon-bar"></span> -->
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Teddy Ni</a>
+      <a class="navbar-brand" href="#"></a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="navbar">
@@ -52,9 +56,14 @@
   </div>
 </nav>
 
+<!-- LOADING SCREEN -->
+<div id="logo-wrapper" class="vertical-center container-fluid">
+  <div id="logo" class="text-center">Teddy Ni</div>
+</div>
+
 <!-- LANDING SECTION -->
 <div class="jumbotron vertical-center home">
-  <div class="container">
+  <div class="container" id="home">
     <div id=name class="text-center row"> TEDDY NI </div>
     <div class="text-center row">
       <span id="fact" class="text-center"> </span>
