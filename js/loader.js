@@ -1,6 +1,6 @@
 function loader(){
   setTimeout(dispLogo,500);
-  setTimeout(loaded,5000);
+  setTimeout(loaded,6700);
 }
 
 function loaded(){
@@ -17,11 +17,11 @@ function dispLogo(){
 
     var options = {
       size: size,         // Font size, defined by the height of the letters (pixels)
-      weight: 3,         // Font weight (pixels)
+      weight: 5,         // Font weight (pixels)
       rounded: true,    // Rounded letter endings
-      color: '#FFFFFF',  // Font color
-      duration: 1,       // Duration of the animation of each letter (seconds)
-      delay: [0, 0.3],  // Delay animation among letters (seconds)
+      color: ['#985E6D', '#FFFFFF'],  // Font color
+      duration: 1.3,       // Duration of the animation of each letter (seconds)
+      delay: [0.1, 0.3],  // Delay animation among letters (seconds)
       fade: 0.5,         // Fade effect duration (seconds)
       easing: d3_ease.easeCubicInOut.ease,   // Easing function
       individualDelays: false,               // If false (default), every letter delay increase gradually, showing letters from left to right always. If you want to show letters in a disorderly way, set it to true, and define different delays for the desired letters.
@@ -30,4 +30,7 @@ function dispLogo(){
     var myText = new Letters(logo, options);
     document.getElementById("logo").style.display = "block";
     myText.show();
+    setTimeout(function(){
+      myText.hide();
+    },3000);
 }
