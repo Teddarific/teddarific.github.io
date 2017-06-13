@@ -49,8 +49,9 @@ html, body {
 #logo {
  display: none;
 }
-
-
+#logo-wrapper {
+  
+}
 
 .navbar.navbar-default {
     background-color: #192231;

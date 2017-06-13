@@ -1,8 +1,11 @@
+//function that gets called to load page
 function loader(){
   setTimeout(dispLogo,500);
-  setTimeout(loaded,6700);
+  setTimeout(loaded,6500);
 }
 
+
+//TODO: change all to jquery
 function loaded(){
   //remove the logo divs
   document.getElementById("logo").style.display = "none";
@@ -23,9 +26,9 @@ function loaded(){
     document.getElementById("allnavbar").style.display = "block";
     $("#allnavbar").addClass("animated fadeInUp");
   },1500);
-
 }
 
+//display the animated logo
 function dispLogo(){
     var logo = document.getElementById("logo");
 
@@ -46,7 +49,7 @@ function dispLogo(){
               col1, //N
               col2  //I
              ],
-      duration: 1.3,       // Duration of the animation of each letter (seconds)
+      duration: 1.0,       // Duration of the animation of each letter (seconds)
       delay: [0.1, 0.3],  // Delay animation among letters (seconds)
       fade: 0.5,         // Fade effect duration (seconds)
       easing: d3_ease.easeCubicInOut.ease,   // Easing function
