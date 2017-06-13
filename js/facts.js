@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  /*
   $(function(){
       $("#fact").typed({
            strings: [
@@ -13,4 +14,24 @@ $(document).ready(function(){
               typeSpeed: 50
             });
       });
+    */
+
+    setTimeout(startTyping,1000)
 });
+
+function startTyping(){
+  $(function(){
+      $("#fact").typed({
+           strings: [
+                     "a developer.",
+                     "a student.",
+                     "a thinker.",
+                     "an entrepreneur.",
+                     "a learner.",
+                     "a designer.",
+                     "a believer."
+                    ],
+              typeSpeed: 50
+        });
+    });
+}
