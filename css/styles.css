@@ -111,6 +111,10 @@ ul.nav a:active {
   font-size: 120px;
 }
 
+#factwrapper {
+  display: none;
+}
+
 #fact {
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;

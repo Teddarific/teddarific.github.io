@@ -1,20 +1,29 @@
 function loader(){
   setTimeout(dispLogo,500);
-  setTimeout(transition,6700);
-  setTimeout(loaded,8700);
-}
-
-function transition(){
-  document.getElementById("logo-wrapper").classList.add("chgColour");
+  setTimeout(loaded,6700);
 }
 
 function loaded(){
+  //remove the logo divs
   document.getElementById("logo").style.display = "none";
   document.getElementById("logo-wrapper").style.display = "none";
+
+  //begin bringing home elements
+  $(".home").addClass("chgColour");
+
   $(".home").css("display","flex");
-  $(".section").css("display","block");
   document.getElementById("home").style.display = "block";
-  document.getElementById("allnavbar").style.display = "block";
+  $("#name").addClass("animated fadeInUp");
+  document.getElementById("factwrapper").style.display = "block";
+  $("#factwrapper").addClass("animated fadeInUp");
+
+  //bring in navbar and facts
+  setTimeout(function(){
+    $(".section").css("display","block");
+    document.getElementById("allnavbar").style.display = "block";
+    $("#allnavbar").addClass("animated fadeInUp");
+  },1500);
+
 }
 
 function dispLogo(){
