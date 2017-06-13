@@ -24,12 +24,32 @@ html, body {
 }
 
 #logo-wrapper{
-  background-color: #192231;
+  background-color: black;
+}
+
+.chgColour {
+  -webkit-animation-name: loaderToHome; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: loaderToHome;
+  animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: black;}
+    to {background-color: #192231;}
+}
+
+@keyframes loaderToHome {
+    from {background-color: black;}
+    to {background-color: #192231;}
 }
 
 #logo {
  display: none;
 }
+
+
 
 .navbar.navbar-default {
     background-color: #192231;
