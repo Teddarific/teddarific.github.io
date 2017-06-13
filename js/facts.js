@@ -49,6 +49,22 @@ $.fn.typer = function(text, options){
 
 
 $(document).ready(function(){
+  $(function(){
+      $("#fact").typed({
+           strings: [
+                     "a developer.",
+                     "a student.",
+                     "a thinker.",
+                     "an entrepreneur.",
+                     "a learner.",
+                     "a designer.",
+                     "a believer."
+                    ],
+              typeSpeed: 50
+            });
+      });
+
+  /*
   $('#fact').typer([
                     "is from Rhode Island",
                     "can solve a rubik's cube",
@@ -60,4 +76,5 @@ $(document).ready(function(){
                     "Student",
                     "Learner",
                   ]);
+                */
 });

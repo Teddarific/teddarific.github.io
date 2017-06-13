@@ -61,6 +61,7 @@ ul.nav a:active {
 }
 
 #name {
+  diplay: fixed;
   font-family: OstrichSansLight;
   font-size: 120px;
 }
@@ -104,10 +105,33 @@ ul.nav a:active {
   background-color: #494E6B;
 }
 
+/*
 #portfolio {
   background-color: #98878F;
 }
-
+*/
 #contact {
-  background-color: #494E6B;
+  background-color: #98878F;
+}
+
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
