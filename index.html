@@ -30,9 +30,9 @@
   <!-- JS -->
   <script src="js/scrollspy.js"></script>
   <script src="js/facts.js"></script>
-  <script src="js/loader.js"></script>
+  <!-- <script src="js/loader.js"></script> -->
 </head>
-<body onload="loader()">
+<!-- <body onload="loader()"> -->
 
 
 <!-- NAVBAR -->
@@ -41,16 +41,16 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
-        <!-- <span class="icon-bar"></span> -->
         <span class="icon-bar"></span>
+        <!-- <span class="icon-bar"></span> -->
       </button>
-      <a class="navbar-brand" href="#"></a>
+      <a class="navbar-brand" href="#"><img id="toplogo" src="img/logo.svg" /></a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">About Me</a></li>
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <li><a href="#portfolio">Portfolio</a></li>
           <!-- <li><a href="#contact">Contact Me</a></li> -->
         </ul>
       </div>
@@ -66,7 +66,7 @@
 <!-- LANDING SECTION -->
 <div class="container-fluid vertical-center home">
   <div class="container" id="home">
-    <div id=name class="text-center row"> TEDDY NI </div>
+    <div id=name class="text-center row"> teddy ni </div>
     <div class="text-center row" id="factwrapper">
       <span id="fact" class="text-center"> </span>
     </div>
@@ -91,27 +91,181 @@
   </div>
 </div>
 
-<!-- PORTFOLIO
+<!-- PORTFOLIO -->
 <div id="portfolio" class="container-fluid section">
-  <div class="row">
-    <div class="text-center header"> Portfolio </div>
-    <div class="row">
-      <div class=
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <div class="image">
-            <img src='img/dali.png' class="img-rounded portimg">
-          </div>
+    <div class="text-center header" id="pheader"> Portfolio </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/dali.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          DALI Lab
         </div>
-        <div class="col-md-6 infop text-center">
-          I am currently a developer for the Digital Arts, Leadership, and
-          Innovation (DALI) Lab at Dartmouth. While at DALI, I have worked
-          on the project Line at Kaf as a developer.
+        <div class="p-position">
+          Project Manager, Developer II
+        </div>
+        <div class="p-location">
+          Hanover, New Hampshire
+        </div>
+        <div class="p-info">
+          I work at the DALI LAB!
         </div>
       </div>
     </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/ds.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Dassault Systèmes - SIMULIA
+        </div>
+        <div class="p-position">
+          Intern Developer, Multiscale and Analytics App
+        </div>
+        <div class="p-location">
+          Johnston, Rhode Island
+        </div>
+        <div class="p-info">
+          I worked at the Dassault Systemes!
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/tse.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Tiny Search Engine
+        </div>
+        <div class="p-position">
+          Software Design and Implementation
+        </div>
+        <div class="p-info">
+          I wrote a Tiny Search Engine!
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/partilab.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Partilab
+        </div>
+        <div class="p-position">
+          Personal Project
+        </div>
+        <div class="p-info">
+          A Node.js, Mongoose, Passport.js, OAuth
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/c4.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Connect 4
+        </div>
+        <div class="p-position">
+          Personal Project
+        </div>
+        <div class="p-info">
+          A Connect 4 game I've written in AngularJS
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/phil.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Dartmouth Phil
+        </div>
+        <div class="p-position">
+          Personal Project
+        </div>
+        <div class="p-info">
+          A Facebook messenger bot I created with my friends for Dartmouth's
+          2017 HackDay
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/huffman.jpg" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Huffman Encoding
+        </div>
+        <div class="p-position">
+          Problem Solving via Object-Oriented Design
+        </div>
+        <div class="p-info">
+          A file compressor I wrote in Java.
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+    <div class="row p-item">
+      <div class="col-md-5">
+        <img src="img/icons/scraper.png" class="p-img img-rounded">
+      </div>
+      <div class="col-md-7">
+        <div class="p-header">
+          Dartmouth News Scraper
+        </div>
+        <div class="p-position">
+          Personal Project
+        </div>
+        <div class="p-info">
+          An API that returns a JSON object containing the
+          most recent news published on Dartmouth's home website. This application
+          simply scrapes the website, and collects that information, and returns
+          it in clean JSON format. The API is built on on a Node/Express server,
+          and utilizes the Cheerio.js library to scrape.
+        </div>
+      </div>
+    </div>
+
+    <!-- SEPERATOR -->
+
+
+
+
+
 </div>
--->
+
 
 <!-- Contact Me
 <div id="contact" class="container-fluid section">
