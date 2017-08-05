@@ -237,7 +237,54 @@ html, body {
 }
 
 /*
+  Awesomefont Icons
+*/
 
+.fa {
+  text-decoration: none;
+  color: white;
+  font-size: 13vw;
+  padding: 2vw;
+  margins: 3vw;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: var(--c-background);
+}
+
+.fa:hover , .fa:active, .fa:visited, .fa:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github:hover {
+  background-color: black;
+}
+
+.fa-stack-overflow:hover {
+  background-color: #FF9900;
+}
+
+.fa-instagram:hover {
+  background-color: #fb3958;
+}
+
+#cpyright {
+  padding: 0;
+  margins: 0;
+  background-color: black;
+  font-size: 0.8vw;
+}
+
+/*
+  Typer Typer
 */
 
 .typed-cursor{
