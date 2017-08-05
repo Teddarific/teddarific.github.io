@@ -26,6 +26,7 @@ Taupe Gray: #8F8389
   --p-position: #7EBDC2;
   --p-location: #8F8389;
   --p-info: #8F8389;
+  --c-background: #A7C4A0;
 }
 
 @font-face {
@@ -38,6 +39,7 @@ Taupe Gray: #8F8389
 }
 
 html, body {
+  background-color: black;
   color: white;
 }
 
@@ -83,7 +85,7 @@ html, body {
 }
 
 #allnavbar {
-  background-color: #192231;
+  /* background-color: #192231; */
   display: block;
 }
 
@@ -226,6 +228,17 @@ html, body {
   font-size: 2.3vh;
 }
 
+/*
+  Contact Section
+*/
+
+#contact {
+  background-color: var(--c-background);
+}
+
+/*
+
+*/
 
 .typed-cursor{
 	opacity: 1;
@@ -240,21 +253,33 @@ html, body {
  */
 
 #toplogo {
+  margin-top: -2vh;
+  padding-top: -2vh;
   width: 4vw;
   height: 4vw;
 }
 
-.navbar.navbar-default, .navbar-brand{
-    background-color: #192231;
+.navbar-inner {
+  background-color: transparent;
+}
+
+.navbar, .navbar-brand{
+    /* background-color: #192231; */
     color: white;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-family: OstrichSansInline;
     font-size: 35px;
+
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
 }
 
-.navbar.navbar-default .navbar-collapse {
+.navbar, .navbar-collapse {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -270,6 +295,18 @@ ul.nav a:active {
 
 .navbar-nav.navbar-right li a {
   color: white;
+}
+/* navbar style once affixed to the page */
+.affix {
+  background-color: black;
+}
+
+@media (min-width:768px) {
+  .affix-top {
+  /* navbar style at top */
+    background-color:transparent;
+    border-color:transparent;
+  }
 }
 
 /*

@@ -1,7 +1,7 @@
-<svg width="512" height="512" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="447" height="288" viewBox="0 0 447 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>logo</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-17 83)">
+<g id="Canvas" transform="translate(-49 -28)">
 <g id="logo">
 <g id="E">
 <use xlink:href="#path0_stroke" transform="translate(239 173)" fill="url(#paint0_linear)"/>
