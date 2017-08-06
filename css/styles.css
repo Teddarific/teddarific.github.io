@@ -101,7 +101,7 @@ html, body {
   min-height: 100vh;
   background-image: url("../img/background/beach.png");
   background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: auto auto;
     -webkit-background-size: 100% 100%; /*  Safari  */
     -khtml-background-size: 100% 100%; /*  Konqueror  */
     -moz-background-size: 100% 100%; /*  Firefox  */
@@ -125,8 +125,8 @@ html, body {
 }
 
 #propic {
-  height: 50vh;
-  width: 50vh;
+  height: 25vw;
+  width: 25vw;
   display: block;
   margin: auto;
 }
@@ -302,8 +302,8 @@ html, body {
 #toplogo {
   margin-top: -2vh;
   padding-top: -2vh;
-  width: 4vw;
-  height: 4vw;
+  width: 7.5vh;
+  height: 7.5vh;
 }
 
 .navbar-inner {
@@ -327,6 +327,7 @@ html, body {
 }
 
 .navbar, .navbar-collapse {
+    background-color: transparent;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
