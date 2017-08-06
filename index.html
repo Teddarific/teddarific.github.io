@@ -34,7 +34,7 @@
   <!-- <script src="js/loader.js"></script> -->
 
   <script>
-    $(".home").backstretch();
+    //$(".home").backstretch();
     window.onload = function(){
     anime({
       targets: '#lineDrawing .lines path',
@@ -356,7 +356,8 @@
           most recent news published on Dartmouth's home website. This application
           simply scrapes the website, and collects that information, and returns
           it in clean JSON format. The API is built on on a Node/Express server,
-          and utilizes the Cheerio.js library to scrape.
+          and utilizes the Cheerio.js library to scrape. It is currently hosted
+          on Heroku.
           <br>
           <a target="_blank" href="https://github.com/Teddarific/DartmouthScraper">
             View the Github
@@ -421,7 +422,7 @@
     </svg>
   -->
   <div id="lineDrawing">
-    <svg width="447px" height="288px" viewBox="0 0 447 288">
+    <svg width="50vw" viewBox="0 0 447 288">
       <g fill="none" transform="translate(-49 -28)" class="lines" stroke="currentColor" stroke-width="1">
         <path stroke-dasharray="316.85528564453125" style="stroke-dashoffset: 316.401px;" transform="translate(239 173)" fill="url(#paint0_linear)" d="M 0 -24C -13.8071 -24 -25 -12.8071 -25 1C -25 14.8071 -13.8071 26 0 26L 0 -24ZM 55.3241 26C 69.1312 26 80.3241 14.8071 80.3241 1C 80.3241 -12.8071 69.1312 -24 55.3241 -24L 55.3241 26ZM 0 26L 55.3241 26L 55.3241 -24L 0 -24L 0 26Z"></path>
         <path transform="translate(161.45 93)" fill="url(#paint1_linear)" d="M 25.55 0C 25.55 -13.8071 14.3571 -25 0.55 -25C -13.2571 -25 -24.45 -13.8071 -24.45 0L 25.55 0ZM -24.45 179C -24.45 192.807 -13.2571 204 0.55 204C 14.3571 204 25.55 192.807 25.55 179L -24.45 179ZM -24.45 0L -24.45 179L 25.55 179L 25.55 0L -24.45 0ZM 25.55 179L 25.55 0L -24.45 0L -24.45 179L 25.55 179Z"></path>

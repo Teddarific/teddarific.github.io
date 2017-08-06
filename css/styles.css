@@ -102,9 +102,12 @@ html, body {
   background-image: url("../img/background/beach.png");
   background-repeat: no-repeat;
     background-size: auto auto;
-    -webkit-background-size: 100% 100%; /*  Safari  */
-    -khtml-background-size: 100% 100%; /*  Konqueror  */
-    -moz-background-size: 100% 100%; /*  Firefox  */
+    -webkit-background-size: 100% 100%;
+    -khtml-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+
+  /* background-color: #192231; */
+
   margin-bottom: 0;
 }
 
@@ -147,7 +150,7 @@ html, body {
 
 .header {
   font-family:OstrichSansLight;
-  font-size: 16vh;
+  font-size: 10vw;
   margin-bottom: 20px;
 }
 
