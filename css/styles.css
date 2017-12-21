@@ -100,3 +100,53 @@ body {
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
+
+/*
+  Awesomefont Icons
+*/
+
+.fa {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  padding: 1.5vw;
+  margins: 2vw;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: var(--c-background);
+  border-radius: 1vw;
+}
+
+.fa:hover , .fa:active, .fa:visited, .fa:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github:hover {
+  color: white;
+  background-color: black;
+}
+
+.reverse:hover{
+  color: white !important;
+}
+
+.fa-stack-overflow:hover {
+  background-color: #FF9900;
+}
+
+.fa-instagram:hover {
+  background-color: #fb3958;
+}
+
+.fa-envelope:hover {
+  background-color: #00693e;
+}

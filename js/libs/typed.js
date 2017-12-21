@@ -1,6 +1,11 @@
 // The MIT License (MIT)
 
 // Typed.js | Copyright (c) 2016 Matt Boldt | www.mattboldt.com
+// Modifed by Teddy Ni | teddyni.me | 2017
+
+// This version has been modified by Teddy Ni
+// This version supports the next function, allowing the user to control when
+// the next string begins typing
 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal

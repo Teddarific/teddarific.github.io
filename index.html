@@ -10,12 +10,13 @@
   <!-- BOOTSTRAP -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- LIBRARIES -->
  <script src="js/libs/typed.js"></script>
@@ -23,19 +24,21 @@
   <!-- JS -->
   <script src="js/facts.js"></script>
 
+  <script src="js/loader.js"></script>
+
 </head>
 
 
 <body>
 
-  <div class="fullscreen-bg">
-        <video preload="auto" loop muted autoplay playsinline class="fullscreen-bg__video">
-            <source src="tedall.webm" type="video/webm">
-            <source src="tedall.mp4" type="video/mp4">
+  <div id="background" class="fullscreen-bg">
+        <video id="backvid" preload="auto" loop muted autoplay playsinline class="fullscreen-bg__video">
+            <!-- source src="tedall.webm" type="video/webm" -->
+            <!-- source src="tedall.mp4" type="video/mp4" -->
         </video>
   </div>
 
-  <div class="container-fluid vertical-center home">
+  <div id="home-wrapper" class="container-fluid vertical-center home">
     <div class="container" id="home">
       <div id="name" class="row text-center">
         teddy ni
@@ -43,8 +46,17 @@
       <div class="row text-center" id="factwrapper">
         <span id="fact" class="text-center"> </span>
       </div>
+      <div id="contact" class="row text-center">
+            <a target="_blank" href="mailto: teddy.ni.19@dartmouth.edu" class="fa fa-envelope"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/teddy-ni/" class="fa fa-linkedin"></a>
+            <a target="_blank" href="https://github.com/Teddarific" class="fa fa-github"></a>
+            <a target="_blank" href="https://stackoverflow.com/users/2484129/ted" class="fa fa-stack-overflow"></a>
+            <a target="_blank" href="https://www.instagram.com/teddarific/" class="fa fa-instagram"></a>
+      </div>
     </div>
   </div>
+
+
 
 
 </body>
