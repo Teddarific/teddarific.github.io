@@ -1,92 +1,9 @@
-/*
-Style Guide:
-Stormy: #494E6B
-Cloud: #98878F
-Sunset: #985E6D
-Evening: #192231
-*/
-
-/*
-Style Guide:
-Dark Gunmetal: #192231
-Pale Carmine: #BB4430
-Moonstone Blue: #7EBDC2
-Vanilla: #F3DFA2
-Eggshell: #EFE6DD
-Laurel Green: #A7C4A0
-Taupe Gray: #8F8389
-*/
-
-
-:root {
-  --main-about: #7EBDC2;
-  --p-background: #EFE6DD;
-  --p-background-second: #F3DFA2;
-  --p-title: #A7C4A0;
-  --p-position: #7EBDC2;
-  --p-location: #8F8389;
-  --p-info: #8F8389;
-  --c-background: #A7C4A0;
-}
-
-@font-face {
-  font-family: OstrichSansInline;
-  src: url(fonts/OstrichSansInline-Regular.otf);
-}
-@font-face {
-  font-family: OstrichSansLight;
-  src: url(fonts/OstrichSans-Light.otf);
-}
-
 html, body {
-  background-color: black;
-  color: white;
+  height:100%;
 }
-
-.letter {
-  margin: 0 10px;
-}
-
-#logo-wrapper{
-  display: none;
-  background-color: black;
-}
-
-.chgColour {
-  background-color: #192231;
-  -webkit-animation-name: loaderToHome; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-  animation-name: loaderToHome;
-  animation-duration: 2s;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {background-color: black;}
-    to {background-color: #192231;}
-}
-
-@keyframes loaderToHome {
-    from {background-color: black;}
-    to {background-color: #192231;}
-}
-
-#logo {
- display: none;
-}
-
-/*
-  MAIN HOME PAGE LOGISTICS
- */
-
-#home {
-  /* display: none; */
-  display: block;
-}
-
-#allnavbar {
-  /* background-color: #192231; */
-  display: block;
+body {
+  display:flex;
+  align-items:center;
 }
 
 .vertical-center {
@@ -95,26 +12,31 @@ html, body {
   align-items: center;
 }
 
+#home {
+  /* display: none; */
+  display: block;
+  width: 100%;
+  background:rgba(255,255,255,0.3);
+  border-radius: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: white;
+}
+
 .home {
   display: flex;
   height: 100%;
   min-height: 100vh;
-  background-image: url("../img/background/beach.png");
-  background-repeat: no-repeat;
-    background-size: auto auto;
-    -webkit-background-size: 100% 100%;
-    -khtml-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-
-  /* background-color: #192231; */
-
   margin-bottom: 0;
 }
 
 #name {
   diplay: fixed;
-  font-family: OstrichSansLight;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 10vw;
+  text-align: center;
 }
 
 #factwrapper {
@@ -127,168 +49,33 @@ html, body {
   font-size: 20px;
 }
 
-#propic {
-  height: 25vw;
-  width: 25vw;
-  display: block;
-  margin: auto;
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
-.section {
-  /* display: none; */
-  display: block;
-
-  padding-top: 40px;
-  padding-bottom: 20px;
-  overflow: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  min-height: 100vh;
-  height: auto;
-  color: white;
-}
-
-.header {
-  font-family:OstrichSansLight;
-  font-size: 10vw;
-  margin-bottom: 20px;
-}
-
-.infop {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 3.5vh;
-}
-
-#about {
-  background-color: var(--main-about);
-}
-
-#portfolio {
-  background-color: var(--p-background);
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+  	min-width: 100%;
+  	min-height: 100%;
+  	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
 }
 
 /*
-  GENERIC CLASSES
-*/
-
-.img-sq-container {
-  position:relative;
-  overflow:hidden;
-  padding-bottom:100%;
-}
-
-/*
- PORTFOLIO SECTION STYLIN B)
-*/
-
-#pheader {
-  color: var(--p-info);
-}
-
-.p-item {
-  padding-top: 3.25vh;
-  padding-bottom: 3.25vh;
-  margin-bottom: 3.25vh;
-}
-
-.p-item:nth-of-type(even){
-  background-color: var(--p-background-second);
-}
-
-.p-item:nth-of-type(odd){
-  background-color: var(--p-background);
-}
-
-.p-img {
-  height: 20vw;
-  width: 20vw;
-  display: block;
-  margin: auto;
-}
-
-.p-header {
-  color: var(--p-title);
-  font-size: 6vh;
-  font-weight: bold;
-}
-
-.p-position {
-  color: var(--p-position);
-  font-size: 2.7vh;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.p-location {
-  color: var(--p-location);
-  font-size: 2.7vh;
-  font-weight: bold;
-}
-
-.p-info {
-  color: var(--p-info);
-  margin-top: 3vh;
-  font-size: 2.3vh;
-}
-
-/*
-  Contact Section
-*/
-
-#contact {
-  background-color: var(--c-background);
-}
-
-/*
-  Awesomefont Icons
-*/
-
-.fa {
-  text-decoration: none;
-  color: white;
-  font-size: 13vw;
-  padding: 2vw;
-  margins: 3vw;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: var(--c-background);
-}
-
-.fa:hover , .fa:active, .fa:visited, .fa:focus {
-  color: white;
-  text-decoration: none;
-}
-
-
-.fa-linkedin:hover {
-  background-color: #0073a4;
-}
-
-.fa-github:hover {
-  background-color: black;
-}
-
-.fa-stack-overflow:hover {
-  background-color: #FF9900;
-}
-
-.fa-instagram:hover {
-  background-color: #fb3958;
-}
-
-#cpyright {
-  padding: 0;
-  margins: 0;
-  background-color: black;
-  font-size: 0.8vw;
-}
-
-/*
-  Typer Typer
-*/
+  TYPING CURSOR STUFF
+ */
 
 .typed-cursor{
 	opacity: 1;
@@ -296,73 +83,6 @@ html, body {
 	-moz-animation: blink 0.7s infinite;
 	animation: blink 0.7s infinite;
 }
-
-
-/*
-  NAVBAR
- */
-
-#toplogo {
-  margin-top: -2vh;
-  padding-top: -2vh;
-  width: 7.5vh;
-  height: 7.5vh;
-}
-
-.navbar-inner {
-  background-color: transparent;
-}
-
-.navbar, .navbar-brand{
-    /* background-color: #192231; */
-    color: white;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    font-family: OstrichSansInline;
-    font-size: 35px;
-
-    -webkit-transition: all 0.6s ease-out;
-    -moz-transition: all 0.6s ease-out;
-    -o-transition: all 0.6s ease-out;
-    -ms-transition: all 0.6s ease-out;
-    transition: all 0.6s ease-out;
-}
-
-.navbar, .navbar-collapse {
-    background-color: transparent;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-ul.nav a:hover {
-  color: #985E6D !important;
-}
-
-ul.nav a:active {
-  color: #494E6B !important;
-}
-
-.navbar-nav.navbar-right li a {
-  color: white;
-}
-/* navbar style once affixed to the page */
-.affix {
-  background-color: black;
-}
-
-@media (min-width:768px) {
-  .affix-top {
-  /* navbar style at top */
-    background-color:transparent;
-    border-color:transparent;
-  }
-}
-
-/*
-  TYPING CURSOR STUFF
- */
 
 @keyframes blink{
 	0% { opacity:1; }

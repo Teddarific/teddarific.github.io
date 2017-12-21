@@ -67,6 +67,9 @@
 		// amount of time to wait before backspacing
 		this.backDelay = this.options.backDelay;
 
+		this.waitNext = false;
+		this.waitData = false;
+
 		// Fade out instead of backspace
 		this.fadeOut = this.options.fadeOut;
 		this.fadeOutClass = this.options.fadeOutClass;
@@ -236,9 +239,13 @@
 								return;
 						}
 
-						self.timeout = setTimeout(function() {
-							self.backspace(curString, curStrPos);
-						}, self.backDelay);
+						// changed!!!!
+						// self.timeout = setTimeout(function() {
+						// 	self.backspace(curString, curStrPos);
+						// }, self.backDelay);
+						self.waitNext = true;
+						self.waitData = [curString, curStrPos];
+						return;
 
 					} else {
 
@@ -273,6 +280,15 @@
 				// humanized value for typing
 			}, humanize);
 
+		},
+
+
+		next: function(){
+			var self = this;
+			if ( self.waitData ){
+				self.backspace(self.waitData[0], self.waitData[1]);
+				self.waitNext = false;
+			}
 		},
 
 		backspace: function(curString, curStrPos) {
