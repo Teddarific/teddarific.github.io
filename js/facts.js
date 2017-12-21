@@ -24,14 +24,9 @@ $(document).ready(function(){
       if ( time == 0 ){
         triggered = {};
       }
-      if ( time == 0 && triggered[time] === undefined && time != 30){
+      if ( (time == 7 || time == 16 || time == 24 || time == 33 || time == 40) && triggered[time] === undefined ){
         triggered[time] = true;
         controller.next();
-
-        // var execBack = function(){
-        //   controller.backspace("a developer.", 5);
-        // }
-        // setTimeout(execBack, 5000);
       }
 
     },false);
