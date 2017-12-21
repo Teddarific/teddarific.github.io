@@ -276,6 +276,7 @@
 		},
 
 		backspace: function(curString, curStrPos) {
+			console.log("called");
 			var self = this;
 			// exit when stopped
 			if (this.stop === true) {
