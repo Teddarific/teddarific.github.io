@@ -8,7 +8,7 @@ $(document).ready(function(){
                 "a developer.",
                 "a learner.",
                 "a designer.",
-                "a thinker.",
+                "a dreamer.",
                 "an explorer."
                ],
          typeSpeed: 50,
@@ -26,9 +26,22 @@ $(document).ready(function(){
       if ( time == 0 ){
         triggered = {};
       }
+
+      // check for transition times
       if ( (time == 7 || time == 16 || time == 24 || time == 33 || time == 40) && triggered[time] === undefined ){
         triggered[time] = true;
         controller.next();
+
+        // change colors
+        if ( time == 16 ){
+          $('#home').css('color', 'black');
+        }
+        else if ( time == 24 ){
+          $('#home').css('color', '#87CEEB');
+        }
+        else if ( time == 33 ){
+          $('#home').css('color', 'white');
+        }
       }
 
     },false);
