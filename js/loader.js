@@ -32,8 +32,15 @@ function preloadVideo(){
 
 function transition(){
   // remove animation elements
-  $('.preloader').remove();
+  $('.preloader').fadeOut(1000);
+  setTimeout(function(){
+    $('#background').addClass('visible');
+    $('#home-wrapper').addClass('visible');
 
-  document.getElementById("background").style.display = "flex";
-  document.getElementById("home-wrapper").style.display = "flex";
+    $('#background').fadeIn(2000);
+    $('#home-wrapper').fadeIn(1200);
+    document.getElementById("background").style.display = "flex";
+    document.getElementById("home-wrapper").style.display = "flex";
+  }, 2000);
+
 }
