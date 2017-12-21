@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // transition();
   preloadVideo();
 });
 
@@ -17,7 +18,7 @@ function preloadVideo(){
       var video = document.getElementById("backvid");
       console.log("Loading video into element...");
       video.src = vid;
-
+      transition();
       initiateFacts();
      }
      else {
@@ -29,8 +30,10 @@ function preloadVideo(){
   xhr.send();
 }
 
-function initiateLoadingScreen(){
-  // hide all existing elements
-  document.getElementById("background").style.display = "none";
-  document.getElementById("home-wrapper").style.display = "none";
+function transition(){
+  // remove animation elements
+  $('.preloader').remove();
+
+  document.getElementById("background").style.display = "flex";
+  document.getElementById("home-wrapper").style.display = "flex";
 }
