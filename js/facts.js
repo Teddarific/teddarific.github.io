@@ -36,9 +36,6 @@ $(document).ready(function(){
         if ( time == 16 ){
           $('#home').css('color', 'black');
         }
-        else if ( time == 24 ){
-          $('#home').css('color', '#87CEEB');
-        }
         else if ( time == 33 ){
           $('#home').css('color', 'white');
         }
@@ -48,20 +45,3 @@ $(document).ready(function(){
 
     // setTimeout(startTyping,1000)
 });
-
-/*
-function startTyping(){
-  $(function(){
-      $("#fact").typed({
-           strings: [
-                     "a developer.",
-                     "a learner.",
-                     "a designer.",
-                     "a thinker.",
-                     "an explorer."
-                    ],
-              typeSpeed: 50
-        });
-    });
-}
-*/
