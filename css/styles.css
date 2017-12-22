@@ -6,6 +6,7 @@ body {
   display:flex;
   align-items:center;
   background-color: black;
+  z-index: -5000;
 }
 
 #background, #home-wrapper{
@@ -221,6 +222,29 @@ body {
   Mobile Animations
 */
 
+.mobile-back {
+  background-image: url("../img/teddy.jpg");
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -10;
+/*
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; */
+}
+
 #cf {
   position:relative;
   height:281px;
@@ -231,10 +255,6 @@ body {
 #cf img {
   position:absolute;
   left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
 }
 
 #cf img.top:hover {

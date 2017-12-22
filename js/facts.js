@@ -49,7 +49,7 @@ function initiateFacts(){
         $('.fa:active').css('color','white');
         $('.fa:visited').css('color','white');
         $('.fa:focus').css('color','white');
-        $('.fa').removeClass('gitreverse');
+        $('.fa').removeClass('reverse');
 
       }
     }
