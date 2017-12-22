@@ -44,9 +44,9 @@ function preloadVideo(){
   }, 50);
 
   var ptracker = function() {
-    var buffStartTime = 20;
+    var buffStartTime = 10;
     targetVal = Math.min(Math.round(video.buffered.end(0) * (100 / buffStartTime)), 100);
-    if (Math.round(video.buffered.end(0)) >= 20) {
+    if (Math.round(video.buffered.end(0)) >= buffStartTime) {
       video.currentTime = 0;
       video.removeEventListener("progress", ptracker, false);
       clearInterval(i);
