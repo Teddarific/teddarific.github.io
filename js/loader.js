@@ -1,7 +1,6 @@
 $(document).ready(function(){
-
   // check if mobile
-  var isMobile = true;
+  var isMobile = false;
   if ( isMobile ){
     setupMobileEnv();
   }
@@ -82,6 +81,13 @@ function fullyPreloadVideo(){
 
   xhr.send();
 }
+
+/********
+
+MOBILE SLIDE SHOW FOR PERFORMANCE REASONS
+
+*********/
+
 
 function setupMobileEnv(){
 
