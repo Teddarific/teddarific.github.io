@@ -31,12 +31,26 @@ function preloadVideo(){
 
   var video = document.getElementById("backvid");
 
+  var targetVal = 0;
+  var currVal = 0;
+
+  var i = setInterval(function(){
+    if ( currVal < targetVal ){
+      currVal += 1;
+      var d = Math.floor(Math.random() * 2) - 2 + currVal;
+
+      document.getElementById("percent").innerHTML = "" + d + "%";
+    }
+  }, 10);
+
   var ptracker = function() {
     // console.log(Math.round(video.buffered.end(0)));
     // When buffer is 1 whole video is buffered
+    targetVal = Math.min(Math.round(video.buffered.end(0)) * 4, 100);
     if (Math.round(video.buffered.end(0)) >= 25) {
       video.currentTime = 0;
       video.removeEventListener("progress", ptracker, false);
+      clearInterval(i);
       transition();
       initiateFacts();
    }
