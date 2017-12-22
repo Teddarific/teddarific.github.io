@@ -20,8 +20,6 @@ function initiateFacts(){
   };
   var controller = new Typed($("#fact")[0], options);
 
-  vid.addEventListener('click',function(){ video.play(); },false);
-
   vid.addEventListener('timeupdate',function(event){
     var time = parseInt(vid.currentTime);
     // lab.innerHTML = parseInt(vid.currentTime);
