@@ -65,8 +65,8 @@ function transition(){
     $('#background').addClass('visible');
     $('#home-wrapper').addClass('visible');
 
-    $('#background').fadeIn(2000);
-    $('#home-wrapper').fadeIn(1200);
+    $('#background').fadeIn(1000);
+    $('#home-wrapper').fadeIn(2000);
     document.getElementById("background").style.display = "flex";
     document.getElementById("home-wrapper").style.display = "flex";
   }, 2000);
