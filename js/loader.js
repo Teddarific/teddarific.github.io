@@ -41,13 +41,12 @@ function preloadVideo(){
 
       document.getElementById("percent").innerHTML = "" + d + "%";
     }
-  }, 10);
+  }, 50);
 
   var ptracker = function() {
-    // console.log(Math.round(video.buffered.end(0)));
-    // When buffer is 1 whole video is buffered
-    targetVal = Math.min(Math.round(video.buffered.end(0)) * 4, 100);
-    if (Math.round(video.buffered.end(0)) >= 25) {
+    var buffStartTime = 20;
+    targetVal = Math.min(Math.round(video.buffered.end(0) * (100 / buffStartTime)), 100);
+    if (Math.round(video.buffered.end(0)) >= 20) {
       video.currentTime = 0;
       video.removeEventListener("progress", ptracker, false);
       clearInterval(i);
