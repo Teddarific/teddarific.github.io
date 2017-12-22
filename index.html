@@ -20,6 +20,8 @@
 
   <!-- LIBRARIES -->
  <script src="js/libs/typed.js"></script>
+ <script src="canvas-video-player.js"></script>
+
 
   <!-- JS -->
   <script src="js/facts.js"></script>
@@ -31,14 +33,50 @@
 
 <body>
 
+  <script>
+
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+  if (isIOS) {
+
+      var canvasVideo = new CanvasVideoPlayer({
+          videoSelector: '#video',
+          canvasSelector: '.canvas',
+          timelineSelector: false,
+          autoplay: true,
+          makeLoop: true,
+          pauseOnClick: false,
+          audio: false
+      });
+
+  }else {
+
+      // Use HTML5 video
+      document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+  }
+
+  </script>
+
+    <div class="video-responsive">
+        <video class="video" muted loop autoplay playsinline>
+          <source src="tedall.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+      <canvas class="canvas"></canvas>
+
+      <div id="over_video">Look at me</div>
+    </div>
+
+<!--
   <div id="background" class="fullscreen-bg">
-        <video id="backvid" preload="auto" autoplay loop muted webkit-playsinline playsinline class="fullscreen-bg__video">
+        <video id="backvid" preload="auto" autoplay loop muted playsinline class="fullscreen-bg__video">
             <source src="tedall.webm" type="video/webm">
             <source src="tedall.mp4" type="video/mp4">
         </video>
   </div>
 
-<!--
   <div id="home-wrapper" class="container-fluid vertical-center home">
     <div class="container" id="home">
       <div id="name" class="row text-center">
