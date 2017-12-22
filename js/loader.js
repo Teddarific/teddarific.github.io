@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // check if mobile
-  var isMobile = false;
+  var isMobile = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   if ( isMobile ){
     setupMobileEnv();
   }
