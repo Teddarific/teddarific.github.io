@@ -8,7 +8,7 @@ body {
   background-color: black;
 }
 
-#background, #home-wrapper{
+/* #background, */ #home-wrapper{
   display: none;
 }
 

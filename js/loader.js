@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // transition();
-  preloadVideo();
+  //preloadVideo();
 });
 
 
@@ -47,6 +47,7 @@ function preloadVideo(){
     var buffStartTime = 10;
     targetVal = Math.min(Math.round(video.buffered.end(0) * (100 / buffStartTime)), 100);
     if (Math.round(video.buffered.end(0)) >= buffStartTime) {
+      document.getElementById("percent").innerHTML = "100%";
       video.currentTime = 0;
       video.removeEventListener("progress", ptracker, false);
       clearInterval(i);
