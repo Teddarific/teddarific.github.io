@@ -1,6 +1,4 @@
-$(document).ready(function(){
 
-});
 
 function initiateFacts(){
   var vid = document.getElementsByTagName('video')[0]
