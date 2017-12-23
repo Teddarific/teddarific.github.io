@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // check if mobile
   var isMobile = (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-  if ( isMobile ){
+  if ( true ){
     setupMobileEnv();
   }
   else {
@@ -191,28 +191,29 @@ function slideShow(controller){
 function preloadImages(urls, allImagesLoadedCallback){
   var loadedCounter = 0;
   var toBeLoadedNumber = urls.length;
-  var currVal = 0;
-  var targetVal = 0;
-
-  var i = setInterval(function(){
-    targetVal = Math.floor(Math.random() * 5) - 5 + Math.floor(loadedCounter / toBeLoadedNumber);
-    if ( currVal < targetVal ){
-      currVal += 1;
-      document.getElementById("percent").innerHTML = "" + currVal + "%";
-    }
-
-    if ( currVal >= 100 ){
-      document.getElementById("percent").innerHTML = "100%";
-    }
-  }, 50);
+  // var currVal = 0;
+  // var targetVal = 0;
+  //
+  // var i = setInterval(function(){
+  //   targetVal = Math.floor(Math.random() * 5) - 5 + Math.floor(loadedCounter / toBeLoadedNumber);
+  //   if ( currVal < targetVal ){
+  //     currVal += 1;
+  //     document.getElementById("percent").innerHTML = "" + currVal + "%";
+  //   }
+  //
+  //   if ( currVal >= 100 ){
+  //     document.getElementById("percent").innerHTML = "100%";
+  //   }
+  // }, 50);
+  document.getElementById("percent").innerHTML = "Preloading Images...";
 
   urls.forEach(function(url){
     preloadImage(url, function(){
       console.log("image loaded");
       loadedCounter += 1;
       if(loadedCounter == toBeLoadedNumber){
-        clearInterval(i);
-        document.getElementById("percent").innerHTML = "100%";
+        // clearInterval(i);
+        document.getElementById("percent").innerHTML = "Completed";
         allImagesLoadedCallback();
       }
     });
