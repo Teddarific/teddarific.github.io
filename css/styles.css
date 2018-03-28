@@ -1,82 +1,262 @@
+html, body {
+  height:100%;
+}
+
 body {
-  background: linear-gradient(to right, #FFB6C1 , #ADD8E6);
-}
-a{
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 24px;
-}
-/* Set up fonts for the whole page*/
-h1 {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 24px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
-}
-h3 {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 15.4px;
-}
-p {
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
-	font-size: 20px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	line-height: 20px;
+  display:flex;
+  align-items:center;
+  background-color: black;
+  z-index: -5000;
 }
 
-/*Style name header at top*/
-#name{
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
-	font-size: 48px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	line-height: 26.4px;
+#background, #home-wrapper{
+  display: none;
 }
 
+.vertical-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
-/* Style the tab */
+#home {
+  /* display: none; */
+  display: block;
+  width: 100%;
+  background:rgba(255,255,255,0.3);
+  border-radius: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  transition: color 2s ease;
+  color: white;
+}
+
+.home {
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  margin-bottom: 0;
+  padding: 50px;
+}
+
+#name {
+  diplay: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10vw;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 5vw;
+  margin-right: 2vw;
+}
+
+#factwrapper {
+  /* display: none; */
+  display: block;
+}
+
+#fact {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2vw;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
 /*
-.nav-tabs {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #B0C4DE;
-}
+  Full screen videos
 
-/* Style the links inside the tab */
-/*
-.nav-tabs a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-
-/* Style the tab content */
-/*
-.tab-pane {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
 */
 
-.line {
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+  	min-width: 100%;
+  	min-height: 100%;
+  	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+}
+
+/*
+  TYPING CURSOR STUFF
+ */
+
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+
+/*
+  Awesomefont Icons
+*/
+
+.fa {
+  text-decoration: none;
+  color: white;
+  font-size: 3vw !important;
+  padding: 1.5vw;
+  margins: 2vw;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: var(--c-background);
+  border-radius: 1vw;
+}
+
+.fa:hover , .fa:active, .fa:visited, .fa:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github:hover {
+  color: white;
+  background-color: black;
+}
+
+.reverse:hover{
+  color: white !important;
+}
+
+.fa-stack-overflow:hover {
+  background-color: #FF9900;
+}
+
+.fa-instagram:hover {
+  background-color: #fb3958;
+}
+
+.fa-envelope:hover {
+  background-color: #00693e;
+}
+
+/*
+ PRELOADER
+*/
+
+.preloader {
+  margin: auto;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.preloader .line {
+  width: 2px;
+  height: 20px;
+  background: #fff;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacityp 1000ms infinite ease-in-out;
+}
+
+.preloader .line-1 { animation-delay: 800ms; }
+.preloader .line-2 { animation-delay: 600ms; }
+.preloader .line-3 { animation-delay: 400ms; }
+.preloader .line-4 { animation-delay: 200ms; }
+.preloader .line-6 { animation-delay: 200ms; }
+.preloader .line-7 { animation-delay: 400ms; }
+.preloader .line-8 { animation-delay: 600ms; }
+.preloader .line-9 { animation-delay: 800ms; }
+
+@keyframes opacityp {
+  0% {
+    opacity: 1;
+    height: 15px;
+  }
+  50% {
+    opacity: 0;
+    height: 12px;
+  }
+  100% {
+    opacity: 1;
+    height: 15px;
+  }
+}
+
+/*
+  Mobile Animations
+*/
+
+.mobile-back {
+  background-image: url("../img/Code.png");
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
   width: 100%;
-	height: 8px;
-  border-radius: 0px;
-  background-color: #828282;
-  margin-top: 47px;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -10;
+/*
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; */
+}
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+}
+
+#cf img.top:hover {
+  opacity:0;
 }

@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Teddy Ni</title>
+
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Letter_t.svg/1200px-Letter_t.svg.png">
+
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -11,135 +14,91 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <!-- AWESOME FONT -->
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- MY STUFF -->
+  <!-- LIBRARIES -->
+  <script src="js/libs/typed.js"></script>
+  <!-- JS -->
+  <script src="js/facts.js"></script>
+  <script src="js/loader.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111543648-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111543648-1');
+  </script>
+
+  <!-- DEVELOPMENT LOCAL -->
+
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/libs/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <link href="css/fonts/RobotoMono.css" rel="stylesheet">
+  <link href="css/fonts/Ubuntu.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="js/libs/typed.js"></script>
+
   <script src="js/facts.js"></script>
 
+  <script src="js/loader.js"></script> -->
+
+
 </head>
-<body >
-  <div class = "row">
-    <div class = "col-sm-8">
-      <h2 id="name"> Teddy Ni </h2>
-      <h1 id="fact"></h1>
-    </div>
-  </div>
-<!--
-  <ul class="nav nav-tabs">
-     <li class="active"><a data-toggle="tab" href="#AboutMe">About Me </a></li>
-     <li><a data-toggle="tab" href="#FindMe">Find Me</a></li>
-   </ul>
--->
-<div id="AboutMe" class = "container">
 
-  <!-- PICTURES -->
-  <div class ="row">
-    <div class = "col-sm-4">
-    </div>
-    <div class = "col-sm-4">
-      <img src='img/me.jpg' class="img-rounded" height="350" width = "350">
-    </div>
-    <div class = "col-sm-4">
-    </div>
+
+<body>
+
+
+  <div id="background" class="fullscreen-bg">
+        <video id="backvid" preload="auto" autoplay loop muted playsinline class="fullscreen-bg__video">
+            <source src="tedall.webm" type="video/webm">
+            <source src="tedall.mp4" type="video/mp4">
+        </video>
   </div>
 
-  <!-- GENERAL -->
-  <div class="row">
-    <div class="col-sm-1">
-      <div class="line"></div>
-    </div>
-    <div class = "col-sm-2">
-      <h2> [ general ]</h2>
-    </div>
-    <div class = "col-sm-9">
-      <div class="line"></div>
+  <div id="home-wrapper" class="container-fluid vertical-center home">
+    <div class="container" id="home">
+      <div id="name" class="row text-center">
+        teddy ni
+      </div>
+      <div class="row text-center" id="factwrapper">
+        <span id="fact" class="text-center"> </span>
+      </div>
+      <div id="contact" class="row text-center">
+            <a target="_blank" href="mailto: teddy.ni.19@dartmouth.edu" class="fa fa-envelope fa-2x"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/teddy-ni/" class="fa fa-linkedin fa-2x"></a>
+            <a target="_blank" href="https://github.com/Teddarific" class="fa fa-github fa-2x"></a>
+            <a target="_blank" href="https://stackoverflow.com/users/2484129/ted" class="fa fa-stack-overflow fa-2x"></a>
+            <a target="_blank" href="https://www.instagram.com/teddarific/" class="fa fa-instagram fa-2x"></a>
+      </div>
     </div>
   </div>
-  <p>Hi! My name is Teddy Ni, and I'm currenty a '19 at Dartmouth College in Hanover, New Hampshire.
-     Here at Dartmouth, I'm studying Computer Science and Economics, and maybe some math in the future.
-     I'm originally from Barrington, Rhode Island, so as you may be able to tell I really like the north east.
-  </p>
 
-  <!-- HOBBIES -->
-  <div class="row">
-    <div class="col-sm-2">
-      <div class="line"></div>
-    </div>
-    <div class = "col-sm-2">
-      <h2> [ hobbies ]</h2>
-    </div>
-    <div class = "col-sm-8">
-      <div class="line"></div>
-    </div>
-  </div>
-  <p> One of my favorite hobbies is playing and watching soccer. I've grown up playing soccer, and still love to do so.
-      I played both varisty and premier in high school, and now I play club in college. I mainly follow the Premier League,
-      and am a huge fan of Arsenal F.C. My favorite player is Mesut Ozil, as I play as a central attacking midfielder myself!
-      Some of my other favorite players of all time include Steven Gerrard and Toni Kroos.
-  </p>
 
-  <!-- PP -->
-  <div class="row">
-    <div class="col-sm-3">
-      <div class="line"></div>
-    </div>
-    <div class = "col-sm-4">
-      <h2> [ personal projects ]</h2>
-    </div>
-    <div class = "col-sm-5">
-      <div class="line"></div>
-    </div>
+  <div class="preloader">
+    <div class="pl" id="percent"> 0% </div>
+    <span class="pl line line-1"></span>
+    <span class="pl line line-2"></span>
+    <span class="pl line line-3"></span>
+    <span class="pl line line-4"></span>
+    <span class="pl line line-5"></span>
+    <span class="pl line line-6"></span>
+    <span class="pl line line-7"></span>
+    <span class="pl line line-8"></span>
+    <span class="pl line line-9"></span>
+    <div class="pl">Teddy Ni</div>
   </div>
-  <p> Web development has become one of my foremost passions, and is something I've been doing more and more in my free time.
-      Over this past summer, I began learning AngularJS and built my very first web app: a Connect 4 game. Then, over this past winter,
-      I began learning Node.js and Express. Beyond Angular and Node, I have experience in HTML/JS/CSS, Socket.io, MongoDB/Mongoose,
-      Jade, and Java. My favorite language is without a doubt JavaScript! I've also written unit tests in the Karma + Jasmine framework
-      for a front-end web application at Dasault Systemes.
-      Check out my Github profile at the bottom of the page!
-  </p>
-
-  <!-- ASPIRATIONS -->
-  <div class="row">
-    <div class="col-sm-5">
-      <div class="line"></div>
-    </div>
-    <div class = "col-sm-3">
-      <h2> [ aspirations ]</h2>
-    </div>
-    <div class = "col-sm-4">
-      <div class="line"></div>
-    </div>
-  </div>
-  <p>
-    To be honest, I don't really know what I want to do in the future. My main short term goal, however, is to do my work
-      in web development. I hope to learn the full MERN stack, and become a full-stack web developer! From there, I hope to
-      transition into creating native React apps since I think the future lies in integrating web and iOS/Android apps. The dream
-      is to start my own company.
-  </p>
-</div>
-
-<div id="FindMe" class = "container">
-  <div class = "row">
-    <div class = "col-sm-9">
-    </div>
-    <div class = "col-sm-3">
-      <a class = "media" href="https://www.facebook.com/teddy.ni" target="_blank">
-        <i class="fa fa-facebook-square" style="font-size:60px;"></i>
-      </a>
-      <a class = "media" href="https://www.linkedin.com/in/teddy-ni-258771118/" target="_blank">
-        <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
-      </a>
-      <a class = "media" href="https://github.com/Teddarific" target="_blank">
-        <i class="fa fa-github-square" style="font-size:60px;"></i>
-      </a>
-      <a class = "media" href="https://www.instagram.com/teddarific/" target="_blank">
-        <i class="fa fa-instagram" style="font-size:60px;"></i>
-      </a>
-    </div>
-  </div>
-</div>
 
 
 

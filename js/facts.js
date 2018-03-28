@@ -1,81 +1,58 @@
 
-//TYPER FUNCTION ORIGINAL INSPIRATION SOURCE: http://www.bootply.com/rSd1F5vUaM
-//ORIGINAL VERSION CREATED BY tjgrendel
-//Modified version created by Teddy Ni
-$.fn.typer = function(text, options){
 
-    //Options
-    options = $.extend({}, {
-        char: ' ',
-        delay: 1000, //Delay between switching facts
-        duration: 600, //how long each fact lasts
-        endless: true
-    }, options || text);
+function initiateFacts(){
+  var vid = document.getElementsByTagName('video')[0]
+  var lab = document.getElementById('name');
+  var triggered = {};
 
-    text = $.isPlainObject(text) ? options.text : text;
+  var options = {
+    strings: [
+              "a developer.",
+              "a learner.",
+              "a designer.",
+              "a dreamer.",
+              "an explorer."
+             ],
+       typeSpeed: 50,
+       startDelay: 0,
+  };
+  var controller = new Typed($("#fact")[0], options);
 
-    var elem = $(this),
-        isTag = false,
-        c = 0;
+  vid.addEventListener('timeupdate',function(event){
+    var time = parseInt(vid.currentTime);
+    // lab.innerHTML = parseInt(vid.currentTime);
 
-    //i is fact number
-    (function typetext(i) {
-        var e = ({string:1, number:1}[typeof text] ? text : text[i]) + options.char,
-            char = e.substr(c++, 1);
+    // reset what we've seen
+    if ( time == 0 ){
+      triggered = {};
+    }
 
-        if( char === '<' ){ isTag = true; }
-        if( char === '>' ){ isTag = false; }
-        elem.html(e.substr(0, c));
-        if(c <= e.length){
-            if( isTag ){
-                typetext(i);
-            } else {
-                setTimeout(typetext, options.duration/10, i);
-            }
-        } else {
-            c = 0;
+    // check for transition times
+    if ( (time == 7 || time == 16 || time == 24 || time == 33 || time == 40) && triggered[time] === undefined ){
+      triggered[time] = true;
+      controller.next();
 
-            //Original: iterate through each fact
-            /**
-            i++;
-            if (i === text.length && !options.endless) {
-                return;
-            } else if (i === text.length) {
-                i = 0;
-            }
-            */
+      // change colors
+      if ( time == 16 ){
+        $('#home').css('color', 'black');
+        $('.fa').css('color','black');
+        $('.fa:hover').css('color','black');
+        $('.fa:active').css('color','black');
+        $('.fa:visited').css('color','black');
+        $('.fa:focus').css('color','black');
+        $('.fa').addClass('reverse');
+      }
+      else if ( time == 24 ){
+        $('#home').css('color', 'white');
+        $('.fa').css('color','white');
+        $('.fa:hover').css('color','white');
+        $('.fa:active').css('color','white');
+        $('.fa:visited').css('color','white');
+        $('.fa:focus').css('color','white');
+        $('.fa').removeClass('reverse');
 
-            //Find random fact instead:
-            var k;
-            do{
-              k = Math.floor((Math.random() * text.length));
-            }
-            while( i == k) //Ensure a different fact each time
-            i = k;
+      }
+    }
 
-            setTimeout(typetext, options.delay, i);
-        }
-    })(0);
-};
-
-
-$(document).ready(function(){
-  $('#fact').typer(["plays soccer",
-                    "enjoys doing web development",
-                    "is from Rhode Island",
-                    "can solve a rubik's cube",
-                    "loves longboarding",
-                    "is a member of Sigma Phi Epsilon",
-                    "loves traveling around the world",
-                    "has very, very, very small hands",
-                    "is an Arsenal supporter",
-                    "loves algorithms",
-                    "is beginning to fall for coffee",
-                    "has way too many shoes",
-                    "enjoys himself a nice pen",
-                    "prefers the fall and spring",
-                    "is Chinese American",
-                    "wants to join a start-up",
-                    "is probably taking a nap right now"
-                  ]);
-});
+  },false);
+}
