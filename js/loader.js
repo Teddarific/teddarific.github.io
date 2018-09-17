@@ -26,7 +26,7 @@ function preloadVideo(){
   }, 50);
 
   var ptracker = function() {
-    var buffStartTime = 18;
+    var buffStartTime = 12;
     targetVal = Math.min(Math.round(video.buffered.end(0) * (100 / buffStartTime)), 100);
     if (Math.round(video.buffered.end(0)) >= buffStartTime) {
       document.getElementById("percent").innerHTML = "100%";
