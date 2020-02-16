@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   module: {
@@ -18,6 +18,20 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+          {
+            loader: 'react-svg-loader',
+            options: {
+              jsx: true,
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -25,4 +39,4 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-};
+}

@@ -1,15 +1,14 @@
 import * as React from 'react'
+import WebFont from 'webfontloader'
 
-import Test from './components/Test'
+import RobinhoodSection from './components/RobinhoodSection'
+
+WebFont.load({
+  google: {
+    families: ['Nunito'],
+  },
+})
 
 export default function App() {
-  return (
-    <div
-      css={{
-        backgroundColor: 'red'
-      }}
-    >
-      <Test />
-    </div>
-  )
+  return <RobinhoodSection />
 }
