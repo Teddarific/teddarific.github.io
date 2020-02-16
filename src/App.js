@@ -4,7 +4,11 @@ import Test from './components/Test'
 
 export default function App() {
   return (
-    <div>
+    <div
+      css={{
+        backgroundColor: 'red'
+      }}
+    >
       <Test />
     </div>
   )
